@@ -27,11 +27,15 @@
     },
     "dependencies": {
         "bootstrap": "4.2.1",
+        "express": "^4.16.4",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.3",
         "gulp": "4.0.0"
+    },
+    "scripts": {
+    "start": "node server.js"
     }
 }
