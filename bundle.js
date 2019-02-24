@@ -49,8 +49,8 @@ var func = function()
         console.log(zipCode);
         console.log(content.hits[0].average);
         document.getElementById("zip").innerText = "Zip Code is: " + zipCode;
-        document.getElementById("credScore").innerText = "Financial credibility rating is: "+ content.hits[0].average + " (" + content.hits[0].meanVariance.toString().substring(0,4) + ")";
-
+        credScoreString = "Financial credibility rating is: "+ content.hits[0].average + " (" + content.hits[0].meanVariance.toString().substring(0,4) + ")";
+        document.getElementById("credScore").innerHTML = credScoreString + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "Mean credit rate: 1.574";
       });
 
 
@@ -70,7 +70,8 @@ var func = function()
           console.log(content.hits[0]["MSA"]);
           console.log(content.hits[0]["crime rate"]);
           document.getElementById("nameMSA").innerText = "MSA name is: " + content.hits[0]["MSA"];
-          document.getElementById("crimScore").innerText = "Crime rating (per 100,000 people) is: "+ content.hits[0]["crime rate"];
+          crimScoreString = "Crime rating (per 100,000 people) is: "+ content.hits[0]["crime rate"];
+          document.getElementById("crimScore").innerText = crimScoreString + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + " Mean crime rate: 334.4";
 
         });
       });
@@ -5792,9 +5793,9 @@ var Promise$1 = function () {
   /**
     `finally` will be invoked regardless of the promise's fate just as native
     try/catch/finally behaves
-  
+
     Synchronous example:
-  
+
     ```js
     findAuthor() {
       if (Math.random() > 0.5) {
@@ -5802,7 +5803,7 @@ var Promise$1 = function () {
       }
       return new Author();
     }
-  
+
     try {
       return findAuthor(); // succeed or fail
     } catch(error) {
@@ -5812,9 +5813,9 @@ var Promise$1 = function () {
       // doesn't affect the return value
     }
     ```
-  
+
     Asynchronous example:
-  
+
     ```js
     findAuthor().catch(function(reason){
       return findOtherAuther();
@@ -5822,7 +5823,7 @@ var Promise$1 = function () {
       // author was either found, or not
     });
     ```
-  
+
     @method finally
     @param {Function} callback
     @return {Promise}
