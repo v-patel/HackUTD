@@ -51,6 +51,8 @@ var func = function()
         document.getElementById("zip").innerText = "Zip Code is: " + zipCode;
         credScoreString = "Financial credibility rating is: "+ content.hits[0].average + " (" + content.hits[0].meanVariance.toString().substring(0,4) + "%)";
         document.getElementById("credScore").innerHTML = credScoreString + '\xa0\xa0\xa0\xa0' + "Mean credit rate: 1.574";
+      //  capIncomeString = "Income per capita is: " + content.hits[0].capIncome;
+      //  document.getElementById("capIncome").innerHTML = capIncomeString + '\xa0\xa0\xa0\xa0' + "Mean income: $57,600";        
       });
 
 
