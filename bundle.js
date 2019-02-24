@@ -49,8 +49,8 @@ var func = function()
         console.log(zipCode);
         console.log(content.hits[0].average);
         document.getElementById("zip").innerText = "Zip Code is: " + zipCode;
-        credScoreString = "Financial credibility rating is: "+ content.hits[0].average + " (" + content.hits[0].meanVariance.toString().substring(0,4) + ")";
-        document.getElementById("credScore").innerHTML = credScoreString + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + "Mean credit rate: 1.574";
+        credScoreString = "Financial credibility rating is: "+ content.hits[0].average + " (" + content.hits[0].meanVariance.toString().substring(0,4) + "%)";
+        document.getElementById("credScore").innerHTML = credScoreString + '\xa0\xa0\xa0\xa0' + "Mean credit rate: 1.574";
       });
 
 
