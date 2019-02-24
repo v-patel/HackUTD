@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
   <script src="bundle.js"></script>
 </head>
 
@@ -56,8 +57,8 @@
         <div class="col-lg-8 mx-auto">
           <h2>Map</h2>
           <form class="example" onsubmit="return false;">
-            <input type="text" placeholder="Search.." class="test" id="search">
-            <button type="submit" onclick="func()"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Enter Zip Code..." class="test" id="search">
+            <button type="submit" onclick="func()"> Submit <i class="fa fa-search"></i></button>
           </form>
           <iframe
                   id="map"
@@ -78,13 +79,11 @@
         <div class="col-lg-8 mx-auto">
           <h2>Data</h2>
           <p class="lead">Data about your input location:</p>
-          <ul>
+          <ul style="list-style-type:none;">
             <li id="zip"></li>
             <li id="credScore"></li>
             <li id="nameMSA"></li>
             <li id="crimScore"></li>
-            <li>Mean crime rate: <b>334.4</b></li>
-            <li>Median crime rate: <b>342.6</b></li>
           </ul>        </div>
       </div>
     </div>
