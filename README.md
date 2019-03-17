@@ -1,60 +1,14 @@
-# [Start Bootstrap - Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/)
-
-[Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/) is an unstyled one page starter template with a collapsing, smooth scrolling navigation bar for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
-
-## Preview
-
-[![Scrolling Nav Preview](https://startbootstrap.com/assets/img/templates/scrolling-nav.jpg)](https://blackrockdigital.github.io/startbootstrap-scrolling-nav/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-scrolling-nav/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-scrolling-nav/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-scrolling-nav.svg)](https://www.npmjs.com/package/startbootstrap-scrolling-nav)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-scrolling-nav.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-scrolling-nav)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav?type=dev)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/scrolling-nav/)
-* Install via npm: `npm i startbootstrap-scrolling-nav`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/scrolling-nav/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
+## Inspiration
+Our families have all had trouble in the past finding the right home in the right area. We believe that there needs to be a web app that provides a user with the most important statistics to find the ideal location to settle down. These statistics need to take into account the financial stability of a location, the safety and reliability of the neighborhood, and also how it compares to the rest of the nation. Moreover, while this information does exist out there, it is held within large data tables and buried in places that make it difficult to search and explore easily for most people. Our goal in beginning this project was to simplify this process and provide useful data visualization tools to view information as well as to design algorithms that calculate a simple credibility index for locations instead of showing our users an overwhelming amount of complicated data.
+## What it does
+This web app summarizes the most important data and provides it in a clean and simple manner to the user.
+## How we built it
+We used the Google Maps Embed API to display the map and update it using the user input. We used HTML, JavaScript, and CSS to build the website framework itself. Algolia was used to search our datasets for the proper queries based on the user input. Some of our datasets came from Fannie Mae while others, like the FBI: UCR API, were found separately. R was used to evaluate the data itself and analyze it to provide useful statistical values (for example, the financial rating).
+## Challenges we ran into
+The biggest issue was finding a way to update the map in a useful way. Many ideas were scrapped in the data visualization aspect, as the possible options were either expensive or not possible for our framework.
+## Accomplishments that we're proud of
+The way we intuitively used Algolia to run our queries allowed our searches to provide meaningful data even when the user did not provide a suitable input. The clean look of the website was another bright spot for us.
+## What we learned
+We learned how to incorporate multiple APIs and a data search engine into a web app.
+## What's next for ZipJudge
+The future of zipJudge involves adding in more parameters to the algorithm used to evaluate zipcodes. Moreover, the ability to view models by individual categories is an area of interest. Currently, our data model and backend supports the ability to query and search by zipcodes. An additional goal is being able to add in support to query several unique parameters and be able to retrieve results based on that. These advanced filters and search parameters will better help users find the information they are looking for. We also seek to not just provide a financial solution to the problem of finding a stable neighborhood, but we also want to make our information easily accessible to people with a multitude of other purposes including research and academia. We also feel that with more information, we can be a one-stop-shop for the majority of details regarding a neighborhood and support in endeavors to equalize the difference between places with a great degree of variance in credibility ratings. Another area that we are looking to explore in adding interactive mapping software to visualize data in a more intuitive and comforting manner.
